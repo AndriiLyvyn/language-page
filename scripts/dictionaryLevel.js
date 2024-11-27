@@ -8,7 +8,7 @@ let filteredItems = []; // Lista przefiltrowanych elementów
 
 const getLevel = localStorage.getItem("level");
 
-fetch("/data/dictonaryLevel.json")
+fetch("https://andriilyvyn.github.io/language-page/data/dictonaryLevel.json")
   .then((response) => response.json())
   .then((data) => {
     items = data[getLevel] || [];
