@@ -1,0 +1,228 @@
+/* Global styles */
+body {
+    height: 100vh;
+     margin: 0px;
+     padding: 0px;
+     background-color: rgb(138, 168, 137);
+     color: #333;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+ }
+ 
+ h2 {
+     font-size: 36px;
+     margin: 30px 0; /* Zwiększenie odstępu od góry i dołu */
+     color: #333;
+ }
+ 
+ #head_topic {
+     font-weight: bold;
+     color: black;
+ }
+ 
+ /* numbersOfWords block */
+ #numbersOfWords {
+     background-color: rgb(138, 168, 137);
+     border: 2px solid #ddd;
+     border-radius: 10px;
+     padding: 20px;
+     width: 100%;
+     max-width: 500px; /* Ograniczenie szerokości */
+     margin: 20px 0;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+ }
+ 
+ #numbersOfWords h2 {
+     font-size: 20px;
+     margin-bottom: 15px;
+ }
+ 
+ #numbersOfWords ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 10px 0; /* Drobny odstęp między listą a treścią */
+ }
+ 
+ #numbersOfWords li {
+     background-color: #e0e0e0;
+     margin: 10px 0;
+     padding: 15px; /* Zwiększenie przestrzeni wewnątrz listy */
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+ 
+ #numbersOfWords li:hover {
+     background-color: #d0d0d0;
+ }
+ 
+ #numbersOfWords li:active {
+     background-color: #c0c0c0;
+ }
+ 
+ /* wordsBlock */
+ #wordsBlock {
+     background-color: #ffffff;
+     border: 2px solid #ddd;
+     border-radius: 10px;
+     padding: 30px;
+     width: 100%; /* Zmiana na 100% szerokości */
+     max-width: 500px; /* Dodanie ograniczenia szerokości */
+     margin: 20px auto;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     display: none; /* Hidden initially */
+ }
+ 
+ #wordsBlock p#currentWord {
+     font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 10px;
+     color: #333;
+ }
+ 
+ #wordsBlock input[type="text"] {
+     width: calc(100% - 20px);
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+ 
+ #masseForUsers {
+    font-family: 40px;
+    font-weight: 800;
+     color: red;
+     margin-top: 20px;
+ }
+ 
+ #wordsBlock button {
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     margin: 5px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     font-size: 16px;
+ }
+ 
+ #wordsBlock button:hover {
+     background-color: #45a049;
+ }
+ 
+ #wordsBlock button:active {
+     background-color: #3e8e41;
+ }
+ 
+ /* finalBlock */
+ #finalBlock {
+     background-color: #ffffff;
+     border: 2px solid #ddd;
+     border-radius: 10px;
+     padding: 20px;
+     width: 100%;
+     max-width: 600px;
+     margin: 20px 0;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     display: none; /* Hidden initially */
+ }
+ 
+ #finalBlock ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ #finalBlock li {
+     background-color: #f9f9f9;
+     border-bottom: 1px solid #ddd;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+ 
+ #finalBlock li p {
+     margin: 0;
+     padding: 0 5px;
+     flex-basis: 25%;
+     text-align: center;
+ }
+ 
+ #finalBlock li:first-child {
+     font-weight: bold;
+     background-color: #f0f0f0;
+ }
+ 
+ #finalBlock button {
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     padding: 10px 80px;
+     margin: 20px auto; /* dodano automatyczne wyśrodkowanie i margines górny/dolny */
+     display: block; /* wyśrodkowanie przycisku */
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     font-size: 16px;
+ }
+ 
+ #finalBlock button:hover {
+     background-color: #45a049;
+ }
+ 
+ #finalBlock button:active {
+     background-color: #3e8e41;
+ }
+ 
+ /* Responsywność */
+ @media (max-width: 768px) {
+     #numbersOfWords, #wordsBlock, #finalBlock {
+         width: 100%;
+         padding: 15px;
+     }
+ 
+     #finalBlock {
+         width: 100%;
+         padding: 20px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     #numbersOfWords, #wordsBlock, #finalBlock {
+         width: 100%;
+         padding: 10px;
+     }
+ 
+     #finalBlock button {
+         padding: 10px 40px;
+         font-size: 14px;
+     }
+ }
+ 
+ /* Dodatkowa stylizacja dla słów */
+ .words {
+     font-weight: bold;
+     font-size: 30px;
+     color: #4CAF50;
+     margin-bottom: 10px;
+ }
+
+
+ footer {
+    margin-top: 1500px;
+    background-color: #2a9d8f;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+ 

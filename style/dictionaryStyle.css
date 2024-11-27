@@ -1,0 +1,90 @@
+body {
+     background-color: rgb(138, 168, 137);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ h2 {
+     font-size: 48px;
+     margin-top: 18px;
+ }
+ 
+ .container {
+     box-sizing: border-box;
+     width: 80%;
+     display: grid;
+     grid-template-columns: repeat(3, 250px);
+     grid-template-rows: repeat(3, 250px);
+     gap: 50px;
+     justify-content: center;
+     padding-top: 50px;
+ }
+ 
+ div .dictionary {
+     width: 250px;
+     height: 250px;
+     border: none; /* Usunięcie ramki */
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1.5em;
+     font-weight: bolder;
+     border-radius: 20px;
+     background-color: rgba(255, 255, 255, 0.8); /* Półprzezroczyste tło */
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Cień dla efektu unoszenia */
+     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Płynne animacje */
+ }
+ 
+ div .dictionary:hover {
+     background-color: rgba(46, 141, 41, 0.8); /* Mocniejszy kolor przy hover */
+     transform: scale(1.05); /* Powiększenie przy najechaniu */
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Silniejszy cień przy hover */
+ }
+ 
+ div .dictionary p {
+     text-align: center;
+     padding: 10px;
+     color: #333; /* Zmiana koloru tekstu */
+ }
+ 
+ /* Style responsywne */
+ @media (max-width: 1024px) {
+     .container {
+         width: 100%;
+         gap: 28px;
+         padding: 0px;
+     }
+     .container .dictionary {
+         width: 230px;
+         height: 230px;
+     }
+ }
+ 
+ @media (max-width: 768px) {
+     .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         padding: 0px;
+     }
+     .container .dictionary {
+         width: 500px;
+         height: 100px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+    .container{
+      margin-top: 16px;
+    }
+     .container .dictionary {
+         width: 360px;
+         height: 100px;
+     }
+ }
+ 

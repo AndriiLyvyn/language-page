@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(138, 168, 137);
+  
+}
+
+.readTextBlock {
+     background-color: #f9f9f9; /* Light grey background */
+     border: 1px solid #ddd; /* Light grey border */
+     border-radius: 8px; /* Rounded corners */
+     padding: 20px; /* Padding inside the block */
+     margin: 20px auto; /* Margin on top and bottom, centered horizontally */
+     max-width: 800px; /* Maximum width for larger screens */
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for a 3D effect */
+     
+ }
+ 
+ .readTextBlock h2 {
+     color: #333; /* Dark grey color for the heading */
+     font-size: 24px; /* Font size for the heading */
+     margin-bottom: 10px; /* Margin below the heading */
+ }
+ 
+ .readTextBlock ul {
+     list-style-type: none; /* Remove default bullet points */
+     padding: 0; /* Remove default padding */
+ }
+ 
+ .readTextBlock li {
+     background-color: #fff; /* White background for list items */
+     border: 1px solid #ddd; /* Light grey border for list items */
+     border-radius: 4px; /* Slightly rounded corners for list items */
+     padding: 10px; /* Padding inside list items */
+     margin-bottom: 8px; /* Margin below each list item */
+     font-size: 18px; /* Font size for list items */
+ }
+ 
+ .readTextBlock li:hover {
+     background-color: #f1f1f1; /* Light grey background on hover */
+     cursor: pointer; /* Pointer cursor on hover */
+     transition: background-color 0.3s ease; /* Smooth transition for background color */
+ }
+
+ .grammarBlock {
+    background-color: #f9f9f9; /* Jasne tło dla bloku */
+    border: 2px solid #ddd; /* Obramowanie wokół bloku */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    padding: 20px; /* Wewnętrzne marginesy */
+    max-width: 800px; /* Maksymalna szerokość */
+    margin: 20px auto; /* Wyśrodkowanie bloku */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lekki cień */
+    font-family: Arial, sans-serif; /* Ustawienie czcionki */
+    display: none;
+}
+
+.grammarBlock h1 {
+    font-size: 24px; /* Większy rozmiar nagłówka */
+    color: #333; /* Ciemniejszy kolor nagłówka */
+    margin-bottom: 10px; /* Odstęp poniżej nagłówka */
+}
+
+.grammarBlock h3 {
+    font-size: 18px; /* Rozmiar nagłówka h3 */
+    color: #555; /* Kolor nagłówka h3 */
+    margin-bottom: 10px; /* Odstęp poniżej nagłówka */
+}
+
+.grammarBlock ul {
+    list-style-type: none; /* Usunięcie domyślnych punktów listy */
+    padding: 0; /* Usunięcie domyślnego paddingu */
+}
+
+.grammarBlock li {
+    background-color: #e0e0e0; /* Tło dla elementów listy */
+    margin: 5px 0; /* Odstęp między elementami listy */
+    padding: 10px; /* Wewnętrzne marginesy dla elementów listy */
+    border-radius: 5px; /* Zaokrąglone rogi elementów listy */
+    transition: background-color 0.3s; /* Płynna zmiana koloru tła przy hover */
+}
+
+.grammarBlock li:hover {
+    background-color: #d0d0d0; /* Zmiana koloru tła przy najechaniu */
+    cursor: pointer; /* Wskaźnik na kursorze */
+}
+
+#chapterSection {
+   
+    background-color:#d0d0d0; /* Zielony kolor tła */
+    padding: 20px; /* Wewnętrzny odstęp */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.2); /* Cień */
+    display: flex; /* Użycie Flexboxa */
+    flex-direction: column; /* Układ w kolumnie */
+    align-items: center; /* Wyrównanie elementów na środku */
+    max-width: 800px; /* Maksymalna szerokość diva */
+    margin: 20px auto; /* Wyrównanie diva na środku */
+   
+}
+
+#chapterSection p {
+    font-size: 2em; 
+    color: black; /* Czarny kolor tekstu */
+    margin-bottom: 15px; /* Odstęp poniżej paragrafu */
+    text-align: center; /* Wyrównanie tekstu na środku */
+    font-family: 'Arial', sans-serif; /* Dopasowana czcionka */
+}
+
+#chapterSection button {
+    background-color: rgb(27, 106, 55); /* Zielone tło przycisków */
+    color: black; /* Czarny kolor tekstu */
+    border: none; /* Brak ramki */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    padding: 10px 20px; /* Wewnętrzny odstęp */
+    font-size: 1.2em;
+    font-weight:700;
+    font-family: 'Arial', sans-serif; /* Dopasowana czcionka */
+    cursor: pointer; /* Zmienienie kursora na wskaźnik przy najechaniu */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    transition: background-color 0.3s ease; /* Płynna zmiana koloru tła */
+    margin: 5px 0; /* Odstęp między przyciskami */
+    width: 100%; /* Przyciski zajmują całą szerokość */
+    text-align: center; /* Wyrównanie tekstu na środku przycisków */
+}
+
+#chapterSection button:hover {
+    background-color: rgba(46, 141, 41, 0.8);
+    
+}
+
+footer {
+    width: 100%;
+    background-color: green;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}

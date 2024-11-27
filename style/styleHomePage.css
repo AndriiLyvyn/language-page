@@ -1,0 +1,226 @@
+body{
+     background-color: rgb(138, 168, 137);
+}
+ /* Kontener dla zawartości */
+ main {
+     max-width: 1400px;
+     width: 100%;
+     padding: 20px;
+     margin: 0 auto;
+ }
+ 
+ /* Sekcje */
+ section {
+     margin-bottom: 40px;
+     padding: 40px;
+     background-color: #ffffff;
+     border-radius: 15px;
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ /* Efekt hover na sekcjach */
+ section:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+ }
+ 
+ /* Styl nagłówków */
+ h1, h2 {
+     color: green;
+     text-align: center;
+     margin-bottom: 20px;
+     position: relative;
+ }
+ 
+ h1 {
+     font-size: 2.8rem;
+ }
+ 
+ h2 {
+     font-size: 2.2rem;
+ }
+ 
+ /* Stylizacja paragrafów */
+ p {
+     font-size: 1.2rem;
+     color: #4a4a4a;
+     margin-bottom: 15px;
+     line-height: 1.8;
+ }
+ 
+ /* Animacja dla sekcji */
+ section {
+     opacity: 0;
+     animation: fadeIn 1s ease forwards;
+ }
+ 
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+         transform: translateY(20px);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+ 
+
+ 
+
+ 
+ /* Styl powitalnej sekcji */
+ .welcome-section {
+     background-color: #e9f5f2;
+     border-bottom: 8px solid green;
+     border-top: 8px solid green;
+     padding: 30px;
+     border-radius: 15px;
+     position: relative;
+ }
+ 
+ /* Nagłówek z animacją */
+ h1 {
+     animation: slideInLeft 1s ease-out forwards;
+ }
+ 
+ @keyframes slideInLeft {
+     0% {
+         transform: translateY(-100%);
+         opacity: 0;
+     }
+     100% {
+         transform: translateX(0);
+         opacity: 1;
+     }
+ }
+ 
+ /* Nagłówki sekcji z animacją */
+ h2 {
+     animation: slideInRight 1s ease forwards;
+ }
+ 
+ @keyframes slideInRight {
+     0% {
+         transform: translateY(100%);
+         opacity: 0;
+     }
+     100% {
+         transform: translateX(0);
+         opacity: 1;
+     }
+ }
+ 
+ /* Animacje fade-in dla paragrafów */
+ p {
+     opacity: 0;
+     animation: fadeInText 1s 0.5s ease forwards;
+ }
+ 
+ @keyframes fadeInText {
+     0% {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+ 
+ /* Responsywność dla mniejszych ekranów */
+ @media (max-width: 768px) {
+     h1 {
+         font-size: 2.4rem;
+     }
+ 
+     h2 {
+         font-size: 1.8rem;
+     }
+ 
+     p {
+         font-size: 1rem;
+     }
+ 
+     .cta-section button {
+         font-size: 1rem;
+         padding: 12px 24px;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     h1 {
+         font-size: 2rem;
+     }
+ 
+     h2 {
+         font-size: 1.6rem;
+     }
+ 
+     p {
+         font-size: 0.9rem;
+     }
+ 
+     .cta-section button {
+         font-size: 0.9rem;
+         padding: 10px 20px;
+     }
+ }
+
+
+ /* Stylizacja stopki */
+footer {
+   
+     background-color: green;
+     color: #ffffff;
+     padding: 20px 0;
+     text-align: center;
+     margin-top: 40px;
+ }
+ 
+ .footer-content {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+     
+ }
+ 
+ .footer-content p {
+    color: white;
+     margin-bottom: 10px;
+     font-size: 1rem;
+ }
+ 
+ .social-links {
+     list-style-type: none;
+     padding: 0;
+     margin: 10px 0;
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+ }
+ 
+ .social-links li {
+     display: inline;
+ }
+ 
+ .social-links a {
+     color: #ffffff;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+ 
+
+ 
+ .footer-links {
+     margin-top: 10px;
+ }
+ 
+
+ 
+ .footer-links span {
+     color: #ffffff;
+ }
+ 
+ 

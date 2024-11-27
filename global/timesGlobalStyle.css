@@ -1,0 +1,152 @@
+body{
+  background-color: rgb(138, 168, 137);
+}
+.timesCard {
+  max-width: 1100px; /* Użycie max-width dla lepszej responsywności */
+  margin: auto;
+  background-color: white;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.timesCard p {
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 20px 0;
+  border-left: 5px solid #ccc;
+  text-align: justify;
+}
+
+.tableOfSentans {
+  width: 100%; /* Ustawienie szerokości na 100% */
+  padding: 0;
+}
+
+  .tableOfSentansMobile{
+    width: 100%;
+  }
+table{
+  margin: auto;
+}
+.tableOfSentans, .tableForms, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px 5px;
+}
+
+ul li {
+  padding: 10px 0;
+  list-style-type: none;
+}
+
+.tableOfSentansMobile {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px 5px;
+  border: none;
+  display: none;
+}
+
+.footer-content p{
+  border: none;
+  background-color: green;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+/* Media queries dla tabletów i mniejszych urządzeń */
+@media (max-width: 1024px) {
+  .tableOfSentans {
+    display: none; /* Wyłączenie domyślnej tabeli */
+  }
+ .tableOfSentansMobile {
+
+    display: block; /* Włączenie mobilnej wersji tabeli */
+
+  }
+  .tableOfSentansMobile th{
+    width: 900px;
+  }
+}
+
+/* Media queries dla smartfonów */
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 36px; /* Mniejsze nagłówki */
+  }
+  
+  h3 {
+    font-size: 28px; /* Mniejsze nagłówki */
+  }
+
+  p {
+    font-size: 14px; /* Mniejsza czcionka dla tekstów */
+  }
+
+  .timesCard {
+    padding: 15px; /* Mniejsze odstępy */
+  }
+
+  
+}
+
+/* Media queries dla bardzo małych ekranów (telefony wąskie) */
+@media (max-width: 480px) {
+  .timesCard{
+    width: 360px;
+  }
+ 
+  h2 {
+    
+    font-size: 28px; /* Jeszcze mniejsze nagłówki */
+  }
+
+  h3 {
+    font-size: 22px; /* Jeszcze mniejsze nagłówki */
+  }
+
+  p {
+    font-size: 12px; /* Mniejsza czcionka dla tekstów */
+  }
+
+  .timesCard {
+    padding: 10px; /* Minimalne odstępy */
+  }
+
+  ul li {
+    padding: 5px 0; /* Mniejsze odstępy w liście */
+  }
+  .footer-content p{
+    border: none;
+    background-color: green;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  
+}
+

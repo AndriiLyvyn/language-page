@@ -1,0 +1,154 @@
+/* Global styles */
+body {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* numbersOfWords block */
+#numbersOfWords {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#numbersOfWords h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#numbersOfWords ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#numbersOfWords li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#numbersOfWords li:hover {
+    background-color: #d0d0d0;
+}
+
+#numbersOfWords li p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* wordsBlock */
+#wordsBlock {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+}
+
+#wordsBlock p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wordsBlock span {
+    font-weight: bold;
+}
+
+#wordsBlock input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#wordsBlock button  {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+#wordsBlock button:hover {
+    background-color: #45a049;
+}
+
+/* finalBlock */
+#finalBlock {
+
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#finalBlock button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 80px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+}
+
+#finalBlock button:hover {
+    background-color: #45a049;
+}
+
+#finalBlock ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#finalBlock li {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#finalBlock li p {
+    margin: 0;
+    padding: 0 5px;
+    flex-basis: 25%;
+    text-align: center;
+}
+
+#finalBlock li:first-child {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}

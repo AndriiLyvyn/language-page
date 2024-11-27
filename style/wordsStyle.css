@@ -1,0 +1,258 @@
+/* Container for the dictionary */
+
+body{
+  background-color: rgb(138, 168, 137);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_for_dictionary {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Header and Title */
+h2 {
+  width: 950px;
+  text-align: center;
+  margin:  0;
+  color: #fff;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+h3{
+  color: white;
+}
+
+.boxForInput{
+  display: flex;
+  justify-content: center;
+}
+
+/* Input and Button */
+.inputWords {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #4f9c36;
+  border-radius: 5px;
+  width: 60%;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.buttonSrh {
+  padding: 5px 10px;
+  background-color: #4f9c36;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+
+
+.buttonSrh:hover {
+  background-color: #3d7b29;
+}
+
+/* Header */
+.header, h2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4f9c36;
+  border-radius: 8px;
+  font-size: 1.8em;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #2a2a2a;
+}
+
+/* List Styles */
+#container_for_dictionary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#container_for_dictionary li {
+  font-size: 1.2em;
+  border-bottom: 2px solid #ccc;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#container_for_dictionary li:hover {
+  background-color: #e8f7da;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph inside list */
+#container_for_dictionary li p {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+  font-size: 1.4em;
+  color: #333;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 15px;
+  background-color: #919591;
+  font-size: 1.2em;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination li:hover {
+  background-color: #4f9c36;
+}
+
+.pagination li.active {
+  background-color: #2a7a2a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+ 
+  .boxForInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie w poziomie */
+    justify-content: center;
+    width: 100%; /* Upewnienie się, że elementy zajmują pełną szerokość */
+  }
+  
+  .container_for_dictionary {
+    padding: 10px;
+  }
+
+  .header, h2 {
+    font-size: 1.5em;
+    padding: 10px;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .inputWords {
+    width: 80%; /* Zmniejszona szerokość dla urządzeń mobilnych */
+    margin-bottom: 10px;
+  }
+
+  .buttonSrh {
+    width: 80%; /* Zmniejszona szerokość, aby pasowała do inputu */
+    font-size: 1.1em;
+  }
+
+  
+
+  #container_for_dictionary li {
+    flex-direction: column; /* Stack list items vertically */
+    padding: 15px;
+    font-size: 1.1em;
+  }
+
+  #container_for_dictionary li p {
+    font-size: 1.2em;
+  }
+
+  .pagination li {
+    font-size: 1.1em;
+    padding: 8px 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 60%;
+    height: 340px;
+    background-color: rgb(76, 176, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: left 0.3s ease-in-out;
+    z-index: 1;
+}
+
+
+
+
+
+  .boxForInput{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .header, h2 {
+    font-size: 1.2em;
+    padding:16px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  .inputWords {
+    width: 100%;
+  }
+
+  .buttonSrh {
+    width: 350px;
+    height: 50px;
+    font-size: 1.2em;
+  }
+
+
+
+  #container_for_dictionary li {
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  #container_for_dictionary li p {
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .pagination li {
+    font-size: 1em;
+    padding: 6px 10px;
+  }
+}

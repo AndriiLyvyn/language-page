@@ -1,0 +1,190 @@
+
+.container_for_dictionary {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Nagłówki */
+.header, h2 {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4f9c36;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  text-align: center;
+  flex: 1;
+}
+
+.boxForInput{
+  display: flex;
+  justify-content: center;
+}
+
+/* Styl dla input i przycisku */
+.inputWords {
+  width: 80%; 
+  padding: 10px; 
+  border: 2px solid #4f9c36; 
+  border-radius: 5px; 
+  font-size: 1.2em; 
+  margin-bottom: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  transition: border-color 0.3s; 
+}
+
+.inputWords:focus {
+  border-color: #2a2a2a; 
+  outline: none; 
+}
+
+.buttonSrh {
+  background-color: #4f9c36; 
+  color: white; 
+  padding: 5px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  margin-bottom: 10px;
+  font-size: 1.2em; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.buttonSrh:hover {
+  background-color: #2a2a2a; 
+}
+
+/* Listy */
+#container_for_dictionary ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+#container_for_dictionary li {
+  font-size: 1.2em; 
+  border-bottom: 2px solid #2a2a2a; 
+  padding: 15px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #f9f9f9; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+}
+
+#container_for_dictionary li p {
+  margin: 0; 
+  text-align: center; 
+  flex: 1; 
+  font-size: 1.4em; 
+}
+
+/* Paginate */
+.pagination {
+  display: flex; 
+  justify-content: center; 
+}
+
+.pagination li {
+  display: inline-block; 
+  margin: 10px; 
+  padding: 10px 15px; 
+  background-color: rgb(145, 149, 145); 
+  font-size: 1.5em; 
+  color: black; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.pagination li.active {
+  background-color: green; 
+  color: white; 
+}
+
+/* Responsywność dla tabletów */
+@media (max-width: 1024px) {
+  .container_for_dictionary {
+    width: 90%; /* Ustaw szerokość na 90% dla tabletów */
+  }
+
+  .header, h2 {
+    flex-direction: column; /* Ustaw elementy w kolumnie */
+    font-size: 2em; /* Mniejszy rozmiar czcionki */
+  }
+
+  .inputWords {
+    width: 100%; /* Ustaw szerokość pola na 100% */
+  }
+
+  .buttonSrh {
+    width: 100%; /* Ustaw szerokość przycisku na 100% */
+    font-size: 1.1em; /* Mniejszy rozmiar czcionki */
+  }
+
+  #container_for_dictionary li {
+    flex-direction: column; /* Ustaw elementy listy w kolumnie */
+    font-size: 3em; /* Zmniejsz rozmiar czcionki, by był lepiej widoczny */
+  }
+
+  #container_for_dictionary li p {
+    font-size: 1.1em; /* Ustalenie mniejszego rozmiaru czcionki dla paragrafów */
+  }
+
+  .pagination li {
+    font-size: 1.3em; /* Ustalenie mniejszego rozmiaru czcionki dla paginacji */
+    padding: 8px 12px; /* Mniejszy padding */
+  }
+}
+
+/* Responsywność dla telefonów */
+@media (max-width: 768px) {
+  .container_for_dictionary {
+    width: 95%; /* Ustaw szerokość na 95% dla mniejszych ekranów */
+  }
+
+  .header, h2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em; /* Mniejszy rozmiar czcionki */
+  }
+
+
+  .boxForInput{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputWords {
+    width: 100%; 
+  }
+
+  .buttonSrh {
+    width: 100%; /* Ustaw szerokość przycisku na 100% */
+    padding: 10px 10px;
+    font-size: 2em; 
+    background-color: #32761c;
+    
+  }
+
+  #container_for_dictionary li {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    font-size: 1.2em; /* Mniejszy rozmiar czcionki */
+  }
+
+  #container_for_dictionary li p {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .pagination li {
+    font-size: 2em; /* Ustalenie mniejszego rozmiaru czcionki dla paginacji */
+    padding: 16px 20px; /* Mniejszy padding */
+  }
+}
