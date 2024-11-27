@@ -6,7 +6,7 @@ const limitItems = 50;
 let items = [];
 let filteredItems = []; // Lista przefiltrowanych słów
 
-fetch("/data/vocabluary.json")
+fetch("https://andriilyvyn.github.io/language-page/data/vocabluary.json")
   .then((response) => response.json())
   .then((data) => {
     items = data;
