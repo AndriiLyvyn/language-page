@@ -33,7 +33,7 @@ console.log(getLevel)
 head_topic.innerText= getLevel;
 
 function setloop(count) {
-  fetch("/data/dictonaryLevel.json")
+  fetch("https://andriilyvyn.github.io/language-page/data/dictonaryLevel.json")
     .then((response) => response.json())
     .then((data) => {
       const listWords = [];
@@ -133,13 +133,13 @@ function createWords(list) {
   });
 
   exitBtn.addEventListener("click", () => {
-    window.location.href="/pages/exercises.html"
+    window.location.href="https://andriilyvyn.github.io/language-page/pages/exercises.html"
     localStorage.clear();
   });
 }
 
 finalBtn.addEventListener("click", () => {
-  window.location.href="/pages/exercises.html"
+  window.location.href="https://andriilyvyn.github.io/language-page/pages/exercises.html"
   localStorage.clear();
 });
 
