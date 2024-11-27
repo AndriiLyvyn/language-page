@@ -18,40 +18,40 @@ function TimesBlock(data){
       
        switch(element){
           case element = "Present Simple":
-               window.location.href="/pages/timePages/presentSimple.html";
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/presentSimple.html";
           break;
           case element = "Past Simple":
-               window.location.href="/pages/timePages/pastSimple.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/pastSimple.html"
           break;
           case element = "Future Simple":
-               window.location.href="/pages/timePages/futureSimple.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/futureSimple.html"
           break;
           case element = "Present Continuous":
-               window.location.href="/pages/timePages/presentContinuous.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/presentContinuous.html"
           break;
           case element = "Past Continuous":
-               window.location.href="/pages/timePages/pastContinuous.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/pastContinuous.html"
           break;
           case element = "Future Continuous":
-               window.location.href="/pages/timePages/futureContinuos.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/futureContinuos.html"
           break;
           case element = "Present Perfect":
-               window.location.href="/pages/timePages/presentPerfect.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/presentPerfect.html"
           break;
           case element = "Past Perfect":
-               window.location.href="/pages/timePages/pastPerfect.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/pastPerfect.html"
           break;
           case element = "Future Perfect":
-               window.location.href="/pages/timePages/futurePerfect.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/futurePerfect.html"
           break;
           case element = "Present Perfect Continuous":
-               window.location.href="/pages/timePages/presentPerfectContinuous.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/presentPerfectContinuous.html"
           break;
           case element = "Past Perfect Continuous":
-               window.location.href="/pages/timePages/pastPerfectContinuous.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/pastPerfectContinuous.html"
           break;
           case element = "Future Perfect Continuous":
-               window.location.href="/pages/timePages/futurePerfectContinuous.html"
+               window.location.href="https://andriilyvyn.github.io/language-page/pages/timePages/futurePerfectContinuous.html"
           break;
           
        }
