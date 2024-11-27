@@ -41,7 +41,7 @@ function setloop(count , type) {
 
   if(type === "Past"){
    
-      fetch("/data/irregularVerb.json")
+      fetch("https://andriilyvyn.github.io/language-page/data/irregularVerb.json")
     .then((response) => response.json())
     .then((data) => {
       const listWords = [];
@@ -65,7 +65,7 @@ function setloop(count , type) {
     });
   }else if(type === "Participle"){
     
-    fetch("/data/irregularVerb.json")
+    fetch("https://andriilyvyn.github.io/language-page/data/irregularVerb.json")
     .then((response) => response.json())
     .then((data) => {
       const listWords = [];
@@ -172,7 +172,7 @@ function createWords(list , type) {
      });
 
      exitBtn.addEventListener("click", () => {
-      window.location.href="/pages/exercises.html"
+      window.location.href="https://andriilyvyn.github.io/language-page/pages/exercises.html"
       localStorage.clear();
     });
   }else if(type === "Participle"){
@@ -250,7 +250,7 @@ function createWords(list , type) {
     masseForUsers.innerHTML = "";
      });
      exitBtn.addEventListener("click", () => {
-      window.location.href="/pages/exercises.html"
+      window.location.href="https://andriilyvyn.github.io/language-page/pages/exercises.html"
       localStorage.clear();
     });
 
@@ -263,7 +263,7 @@ function createWords(list , type) {
 }
 
 finalBtn.addEventListener("click", () => {
-  window.location.href="/pages/exercises.html"
+  window.location.href="https://andriilyvyn.github.io/language-page/pages/exercises.html"
   localStorage.clear();
 });
 
