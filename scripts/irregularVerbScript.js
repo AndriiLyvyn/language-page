@@ -7,7 +7,7 @@ let items = [];
 let filteredItems = [];
 
 // Pobranie danych i utworzenie stron
-fetch("/data/irregularVerb.json")
+fetch("https://andriilyvyn.github.io/language-page/data/irregularVerb.json")
   .then((response) => response.json())
   .then((data) => {
     items = data;
