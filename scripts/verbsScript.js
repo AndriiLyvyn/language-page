@@ -135,7 +135,7 @@ function createWords(list , type) {
         massege.innerText = "Great!!😁";
         finalList.innerHTML += `<p>✔</p>`;
       } else {
-        massege.innerText = "Bed!!🤦‍♂️";
+        massege.innerText = "Bad!!🤦‍♂️";
         finalList.innerHTML += `<p>💢</p>`;
       }
       finalPage.appendChild(finalList);
@@ -216,7 +216,7 @@ function createWords(list , type) {
         massege.innerText = "Great!!😁";
         finalList.innerHTML += `<p>✔</p>`;
       } else {
-        massege.innerText = "Bed!!🤦‍♂️";
+        massege.innerText = "Bad!!🤦‍♂️";
         finalList.innerHTML += `<p>💢</p>`;
       }
       finalPage.appendChild(finalList);
