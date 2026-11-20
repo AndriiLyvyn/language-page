@@ -1,4 +1,4 @@
-# EnglishGram 🇬🇧
+# EnglishGram 
 
 **EnglishGram** is a web-based platform designed to help users learn and improve their English language skills. It provides learning materials, vocabulary, grammar explanations, and practical exercises in one place.
 
